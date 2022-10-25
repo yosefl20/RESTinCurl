@@ -12,11 +12,10 @@ if (AUTORUN_UNIT_TESTS)
     )
 endif()
 endmacro()
-
+  
 include_directories(
     ${CURL_INCLUDE_DIRS}
-    ../include
-    )
+    ../include)
 
 add_executable(general_tests general_tests.cpp)
 target_link_libraries(general_tests
